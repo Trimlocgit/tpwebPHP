@@ -31,14 +31,12 @@
             <?php
 
                 if (isset($_POST["OK"], $_POST["colonne"], $_POST["ligne"])){
-                    #Récuoération des variables des champs
                     $ligne = $_POST["ligne"];
                     $colonne = $_POST["colonne"];
 
                     for($i = 0; $i < $ligne; $i++){
                         echo "<tr>";
                         for($j = 0; $j < $colonne; $j++){
-                            # Une ligne sur deux et <th> (couleur) et l'autre <td> (neutre)
                             if(($j+$i)%2 == 0){
                                 echo "<th>";
                                 echo "&nbsp;";

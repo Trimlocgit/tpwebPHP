@@ -1,8 +1,41 @@
+
+
 table, td, th{
-    border: 2px solid black;
+    border: 2px solid rebeccapurple;
     border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+
+
+}
+
+hr{
+    color: cyan;
 }
 
 th{
-    background-color: orange;
+    background-color: darkseagreen;
+}
+
+td{
+    background-color: darksalmon;
+}
+
+#buttonOK{
+    background-color: green;
+    color: white;
+    border-radius: 15%;
+    padding: 1%;
+    font-size: 100%;
+    margin: 10px;
+}
+
+#choix{
+    background-color: darkseagreen;
+    margin: 10px;
+}
+
+h1{
+    color: orange;
+    text-align: center;
 }
