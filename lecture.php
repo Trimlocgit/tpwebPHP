@@ -20,7 +20,23 @@
 <hr>
 
 <?php
+
     $filename = "data.csv";
+    $fp = fopen($filename, "a");
+
+    if (isset( $_POST['OK'], $_POST['nom'], $_POST['prenom'], $_POST['age'])) {
+        $nom = $_POST['nom'];
+        $prenom = $_POST['prenom'];
+        $age = $_POST['age'];
+        $result = array($nom, $prenom, $age);
+
+        fputcsv($fp, $result);
+        fclose($fp);
+
+    }
+?>
+
+<?php
     echo "<table>";
     $fp = fopen($filename, "r");
 
@@ -39,6 +55,7 @@
 
 
 ?>
+<hr>
 <?php include ('footer.html'); ?>
 
 
